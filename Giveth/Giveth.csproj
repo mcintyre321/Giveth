@@ -1,7 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Harry McIntyre</Authors>
+    <Title>Giveth - The super simple BDD library - NUnit version</Title>
+    <Company>Harry McIntyre</Company>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Product>Harry McIntyre</Product>
+    <Description>A super simple BDD library that doesn't mangle your code, just add Given("..."); When("..."); Then("..."); to your tests. Generate Gherkin .feature files from your unit tests</Description>
+    <PackageProjectUrl>https://github.com/mcintyre321/Giveth/</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/mcintyre321/Giveth/blob/master/licence.md</PackageLicenseUrl>
+    <PackageTags>BDD, ATDD, GWT, Given When Then, Testing</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Giveth</PackageId>
+    <Copyright>Harry McIntyre</Copyright>
+    <RootNamespace>Giveth</RootNamespace>
   </PropertyGroup>
 
 </Project>
