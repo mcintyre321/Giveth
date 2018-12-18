@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Giveth.NUnit.NetFx.Tests\SomeOtherTestClass.cs" Link="SomeOtherTestClass.cs" />
+    <Compile Include="..\Giveth.NUnit.NetFx.Tests\SomeTestClass.cs" Link="SomeTestClass.cs" />
+    <Compile Include="..\Giveth.NUnit.NetFx.Tests\WriteFeatureFilesAfterTests.cs" Link="WriteFeatureFilesAfterTests.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\Giveth.NUnit.NetFx.Tests\SomeOtherTestClass.expected.feature" Link="SomeOtherTestClass.expected.feature" />
+    <EmbeddedResource Include="..\Giveth.NUnit.NetFx.Tests\SomeTestClass.expected.feature" Link="SomeTestClass.expected.feature" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.11.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Giveth.NUnit\Giveth.NUnit.csproj" />
+    <ProjectReference Include="..\Giveth\Giveth.csproj" />
+  </ItemGroup>
+
+</Project>
