@@ -10,10 +10,11 @@ steps in methods and/or lambdas, making it harder to pass variables around. Some
 encourage you to use method names to represent your Gherkin, which can lead to the specifications 
 accidentally being refactored away.
 
-## Overiew
+# Installation
 
-Giveth adds several no-op static methods for writing your Gherkin specification inline with your code 
-e.g. `public void Giveth.Step.Given(string message){ ... }`. To use them, first:
+Giveth consists of several no-op static methods for writing your Gherkin specification inline with your code. 
+
+To use them, first:
 
 > Install-Package Giveth
 
@@ -77,6 +78,8 @@ public class GivethSetUp
 }
 ```
 
+Note that this class should have no namespace, so that NUnit runs it before/after ALL tests in the project.
+
 After running the tests produce a file for each of your test classes will be produced. e.g. 
 
 `WorkspaceMembership.feature`
@@ -92,8 +95,6 @@ Feature: Workspace membership
 	And the and the content should not be available
 
 ``` 
-
-Note that this class should have no namespace.
 
 ### Why just NUnit and not XUnit?
 
